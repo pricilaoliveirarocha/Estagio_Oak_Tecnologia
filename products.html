@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/products.js"></script>
+    <title>Produtos</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Adicionar Produto</h2>
+        <form id="productForm">
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="productName">Nome do Produto:</label>
+                    <input type="text" class="form-control" id="productName" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="productValue">Valor do Produto:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
+                        <input type="text" class="form-control" id="productValue" required>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Adicionar Produto</button>
+        </form>
+        
+        <hr>
+        
+        <h2>Listagem de Produtos</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+                <!-- Produtos serão listados aqui -->
+            </tbody>
+        </table>
+        <p id="noProductsMsg">Não há Produtos</p>
+    </div>
+</body>
+</html>
