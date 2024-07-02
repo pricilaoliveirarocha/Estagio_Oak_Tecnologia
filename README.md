@@ -1,0 +1,1 @@
+Projeto criado para uma aplicação de vaga para Oak Tecnologia, utilizando algumas habilidades em front-end que já utilizei, como HTML, CSS, JavaScript (jQuery), e integração de bibliotecas como Bootstrap e jQuery Mask. 
